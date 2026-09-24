@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "title": "操作（キーの割り当て）",
+  "note": "キー割り当て。1 つの操作に複数キーを並べられる(どれを押しても効く)。保存すると即反映。left / right / up / down=主人公を隣のマスへ 1 マス動かす / place=主人公の立つマスにいまの手番のマーカーを置く(勝負がついた後はもう一度遊ぶ)。名前は GameEngine.Key の綴り(A〜Z / Digit0〜9 / Up / Down / Left / Right / Space / Enter / LeftShift など)。知らない名前はその 1 個だけ無視され、操作が空になったときはコードの既定(src/KeysDoc.flix)へ落ちる。",
+  "left": [
+    "Left",
+    "A"
+  ],
+  "right": [
+    "Right",
+    "D"
+  ],
+  "up": [
+    "Up",
+    "W"
+  ],
+  "down": [
+    "Down",
+    "S"
+  ],
+  "place": [
+    "Space",
+    "Enter"
+  ]
+}

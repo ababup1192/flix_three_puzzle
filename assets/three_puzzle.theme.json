@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "title": "色",
+  "note": "画面に出る色の全部（16 色）。ドット絵も盤も文字も、ここにある色以外は塗らない（半透明で混ぜた色も作らない）。素材ごとに 暗 / 中 / 明 の 3 段で、光は左上から当たる。いじると何が変わるか: ink=輪郭と文字の墨 / bg*=卓のフェルト（ディザで 3 段をつなぐ） / bar*=仕切りと主人公の肌 / o*=O のマーカーと O のラベル / x*=X のマーカーと X のラベル / hero*=主人公の帽子とつなぎ。",
+  "ink": "#1b1537",
+  "bgDark": "#1f2a78",
+  "bgMid": "#2c43b0",
+  "bgLight": "#3d63d6",
+  "barDark": "#c79a52",
+  "barMid": "#f3dca2",
+  "barLight": "#fff8e6",
+  "oDark": "#a3172f",
+  "oMid": "#f23a3a",
+  "oLight": "#ff9e7a",
+  "xDark": "#b87800",
+  "xMid": "#ffc21a",
+  "xLight": "#fff08a",
+  "heroDark": "#137a4f",
+  "heroMid": "#2fc46e",
+  "heroLight": "#a6f5a0"
+}

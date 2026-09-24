@@ -1,0 +1,12 @@
+{
+  "//": "three_puzzle.texts.json の形の宣言（Studio の sections 方言）。画面に出る文字はここだけに置く（既定値は src/TextsDoc.flix）。",
+  "version": 1,
+  "sections": {
+    "turnO": { "kind": "field", "type": "string", "label": "O の番のラベル", "order": 1, "default": "O TURN" },
+    "turnX": { "kind": "field", "type": "string", "label": "X の番のラベル", "order": 2, "default": "X TURN" },
+    "winO":  { "kind": "field", "type": "string", "label": "O が勝ったときの字", "order": 3, "default": "O WINS!" },
+    "winX":  { "kind": "field", "type": "string", "label": "X が勝ったときの字", "order": 4, "default": "X WINS!" },
+    "draw":  { "kind": "field", "type": "string", "label": "引き分けの字", "order": 5, "default": "DRAW" },
+    "again": { "kind": "field", "type": "string", "label": "もう一度遊ぶ操作の案内", "order": 6, "default": "SPACE: PLAY AGAIN" }
+  }
+}

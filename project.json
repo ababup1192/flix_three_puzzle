@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "title": "3目並べ",
+  "designWidth": 480,
+  "designHeight": 300,
+  "windowWidth": 960,
+  "windowHeight": 600,
+  "windowScale": 2,
+  "clearColor": {
+    "r": 0.105882,
+    "g": 0.082353,
+    "b": 0.215686
+  },
+  "maxDeltaTime": 0.05,
+  "textures": [],
+  "// glyphs": "起動時に焼く字。auto=出た字から順に焼く / used=ソースとアセットにある字を先に焼く / all=フォントの全字",
+  "glyphs": "auto",
+  "fonts": [
+    {
+      "name": "default",
+      "path": "assets/Xolonium-Regular.ttf",
+      "fontSize": 60.0
+    }
+  ],
+  "sounds": [],
+  "editor": {
+    "resources": [
+      {
+        "id": "theme",
+        "pattern": "assets/three_puzzle.theme.json",
+        "title": "色（16 色のパレット）",
+        "schema": "assets/theme.schema.json",
+        "role": "material"
+      },
+      {
+        "id": "sprite",
+        "pattern": "assets/*.sprite.json",
+        "title": "ドット絵",
+        "schema": "assets/sprite.schema.json",
+        "role": "material"
+      },
+      {
+        "id": "texts",
+        "pattern": "assets/three_puzzle.texts.json",
+        "title": "画面の文言",
+        "schema": "assets/texts.schema.json",
+        "role": "material"
+      },
+      {
+        "id": "rules",
+        "pattern": "assets/three_puzzle.rules.json",
+        "title": "ルールと手触り（先手・移る速さ）",
+        "schema": "assets/rules.schema.json",
+        "role": "tuning"
+      },
+      {
+        "id": "keys",
+        "pattern": "assets/player.keys.json",
+        "title": "キー割り当て（どのキーで動かすか）",
+        "schema": "assets/keys.schema.json",
+        "role": "tuning"
+      },
+      {
+        "id": "scenes",
+        "pattern": "assets/*.scenes.json",
+        "title": "場面の説明（ギャラリーに出る題と一言）",
+        "schema": "assets/scenes.schema.json",
+        "role": "tuning"
+      },
+      {
+        "id": "project",
+        "pattern": "project.json",
+        "schema": "project.schema.json",
+        "title": "ゲームの題・画面",
+        "role": "tuning"
+      }
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "title": "ドット絵",
+  "note": "ドット絵。文字は意味色キーで、実色は ThemeDoc.resolver がテーマの色から解く（Studio は paletteFile の写しで同じ色を見る）。どの絵も scale 2 で置くので、1 文字 = 画面 2px。markO / markX = 盤に置くマーカー、miniO / miniX = 主人公が掲げる手番の印、hero = 主人公。光は左上から、輪郭は墨（k）。",
+  "paletteFile": "assets/three_puzzle.palette.json",
+  "entityId": "three_puzzle.sprites",
+  "legend": {
+    "k": "ink",
+    "s": "ink",
+    "o": "oMid",
+    "O": "oLight",
+    "p": "oDark",
+    "x": "xMid",
+    "X": "xLight",
+    "y": "xDark",
+    "g": "heroMid",
+    "G": "heroLight",
+    "d": "heroDark",
+    "c": "barMid",
+    "C": "barLight",
+    "b": "barDark"
+  },
+  "sprites": {
+    "markO": {
+      "note": "O のマーカー（22×22・scale 2 で 44px）。朱の 3 段 + 墨の縁。光は左上。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          "..........kk..........",
+          ".......kkkOOkkk.......",
+          ".....kkOOOOOOOokk.....",
+          "....kOOOOOOOOooook....",
+          "...kOOOOpppppoooook...",
+          "..kOOOOppppppooooook..",
+          "..kOOOppppkkoooooook..",
+          ".kOOOpppkk..kkooooook.",
+          ".kOOpppk......koooopk.",
+          ".kOOpppk......koOOppk.",
+          "kOOOppk........kOOpppk",
+          "kOOOppk........kOOpppk",
+          ".kOOppok......kOOOppk.",
+          ".kOooook......kOOOppk.",
+          ".kooooookk..kkOOOpppk.",
+          "..koooooookkOOOOpppk..",
+          "..kooooooOOOOOOppppk..",
+          "...koooooOOOOOppppk...",
+          "....kooooppppppppk....",
+          ".....kkopppppppkk.....",
+          ".......kkkppkkk.......",
+          "..........kk.........."
+        ]
+      }
+    },
+    "markX": {
+      "note": "X のマーカー（22×22・scale 2 で 44px）。黄の 3 段 + 墨の縁。光は左上。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          ".kkkk............kkkk.",
+          "kXXXXk..........kXXXXk",
+          "kXxxxXk........kXxxxyk",
+          "kXxxxxXk......kXxxxxyk",
+          "kXxxxxxXk....kXxxxxxyk",
+          ".kXxxxxxXk..kXxxxxxyk.",
+          "..kXxxxxxXkkXxxxxxyk..",
+          "...kXxxxxxXXxxxxxyk...",
+          "....kXxxxxxxxxxxyk....",
+          ".....kXxxxxxxxxyk.....",
+          "......kXxxxxxxyk......",
+          "......kXxxxxxxyk......",
+          ".....kXxxxxxxxxXk.....",
+          "....kXxxxxxxxxxxXk....",
+          "...kXxxxxxyyxxxxxXk...",
+          "..kXxxxxxykkXxxxxxXk..",
+          ".kXxxxxxyk..kXxxxxxXk.",
+          "kXxxxxxyk....kXxxxxxXk",
+          "kXxxxxyk......kXxxxxyk",
+          "kXxxxyk........kXxxxyk",
+          "kXyyyk..........kXyyyk",
+          ".kkkk............kkkk."
+        ]
+      }
+    },
+    "miniO": {
+      "note": "主人公が頭上に掲げる「いまの手番」の小さい O（10×10）。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          "...kkkk...",
+          "..kOOOok..",
+          ".kOOppook.",
+          "kOOpkkoook",
+          "kOpk..kOpk",
+          "kOpk..kOpk",
+          "koookkOppk",
+          ".kooOOppk.",
+          "..kopppk..",
+          "...kkkk..."
+        ]
+      }
+    },
+    "miniX": {
+      "note": "主人公が頭上に掲げる「いまの手番」の小さい X（10×10）。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          ".kk....kk.",
+          "kXXk..kXXk",
+          "kXxXkkXxyk",
+          ".kXxXXxyk.",
+          "..kXxxyk..",
+          "..kXxxyk..",
+          ".kXxyyxXk.",
+          "kXxykkXxXk",
+          "kXyk..kXyk",
+          ".kk....kk."
+        ]
+      }
+    },
+    "shadowO": {
+      "note": "O の落ち影。markO の形を墨の市松（半分だけ点を打つ）で抜いた物。右下へずらして敷く。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          "..........s...........",
+          ".......s.s.s.s........",
+          "......s.s.s.s.s.s.....",
+          ".....s.s.s.s.s.s.s....",
+          "....s.s.s.s.s.s.s.s...",
+          "...s.s.s.s.s.s.s.s.s..",
+          "..s.s.s.s.s.s.s.s.s...",
+          ".s.s.s.s.s...s.s.s.s..",
+          "..s.s.s.......s.s.s.s.",
+          ".s.s.s.s.......s.s.s..",
+          "s.s.s.s.........s.s.s.",
+          ".s.s.s.........s.s.s.s",
+          "..s.s.s.......s.s.s.s.",
+          ".s.s.s.s.......s.s.s..",
+          "..s.s.s.s...s.s.s.s.s.",
+          "...s.s.s.s.s.s.s.s.s..",
+          "..s.s.s.s.s.s.s.s.s...",
+          "...s.s.s.s.s.s.s.s....",
+          "....s.s.s.s.s.s.s.....",
+          ".....s.s.s.s.s.s......",
+          "........s.s.s.s.......",
+          "...........s.........."
+        ]
+      }
+    },
+    "shadowX": {
+      "note": "X の落ち影。markX の形を墨の市松で抜いた物。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          "..s.s.............s.s.",
+          ".s.s.s...........s.s.s",
+          "s.s.s.s.........s.s.s.",
+          ".s.s.s.s.......s.s.s.s",
+          "s.s.s.s.s.....s.s.s.s.",
+          ".s.s.s.s.s...s.s.s.s..",
+          "..s.s.s.s.s.s.s.s.s...",
+          "...s.s.s.s.s.s.s.s....",
+          "....s.s.s.s.s.s.s.....",
+          ".....s.s.s.s.s.s......",
+          "......s.s.s.s.s.......",
+          ".......s.s.s.s.s......",
+          "......s.s.s.s.s.s.....",
+          ".....s.s.s.s.s.s.s....",
+          "....s.s.s.s.s.s.s.s...",
+          "...s.s.s.s.s.s.s.s.s..",
+          "..s.s.s.s...s.s.s.s.s.",
+          ".s.s.s.s.....s.s.s.s.s",
+          "s.s.s.s.......s.s.s.s.",
+          ".s.s.s.........s.s.s.s",
+          "s.s.s...........s.s.s.",
+          ".s.s.............s.s.."
+        ]
+      }
+    },
+    "shadowHero": {
+      "note": "主人公の足もとの影（横長の楕円・墨の市松）。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          "..s.s.s.s...",
+          ".s.s.s.s.s..",
+          "s.s.s.s.s.s.",
+          ".s.s.s.s.s..",
+          "..s.s.s.s..."
+        ]
+      }
+    },
+    "hero": {
+      "note": "主人公（12×16・scale 2 で 24×32px）。緑の帽子とつなぎ、肌はクリーム。idle と step（1px 沈む）を交互に出して待機中も呼吸させる。",
+      "anchor": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "frames": {
+        "idle": [
+          "....kkkkk...",
+          "...kGGGggk..",
+          "..kGgggggdk.",
+          "..kddddddddk",
+          "..kCcccccbk.",
+          "..kckcckcbk.",
+          "..kcccccbbk.",
+          "...kbbbbbk..",
+          "..kGggggdk..",
+          ".kcGgGGgdck.",
+          ".kckgggdkck.",
+          "..kgggggdk..",
+          "..kgdkkgdk..",
+          "..kddk.kddk.",
+          "..kbbk.kbbk.",
+          "...kk...kk.."
+        ],
+        "step": [
+          "............",
+          "....kkkkk...",
+          "...kGGGggk..",
+          "..kGgggggdk.",
+          "..kddddddddk",
+          "..kCcccccbk.",
+          "..kckcckcbk.",
+          "..kcccccbbk.",
+          "...kbbbbbk..",
+          "..kGggggdk..",
+          ".kcGgGGgdck.",
+          ".kckgggdkck.",
+          "..kgggggdk..",
+          "..kgdkkddk..",
+          "..kbbk.kbbk.",
+          "...kk...kk.."
+        ]
+      }
+    }
+  }
+}

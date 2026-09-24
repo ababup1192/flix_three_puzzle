@@ -1,0 +1,118 @@
+{
+  "//": "three_puzzle.theme.json の形の宣言（Studio の sections 方言）。色 1 つ = kind field / type color のセクション 1 つ。画面の色はこの 16 色で全部（素材ごとに暗・中・明の 3 段 + 墨）。",
+  "version": 1,
+  "sections": {
+    "ink": {
+      "kind": "field",
+      "type": "color",
+      "label": "墨（輪郭・文字）",
+      "order": 1,
+      "required": true
+    },
+    "bgDark": {
+      "kind": "field",
+      "type": "color",
+      "label": "卓・暗",
+      "order": 2,
+      "required": true
+    },
+    "bgMid": {
+      "kind": "field",
+      "type": "color",
+      "label": "卓・中",
+      "order": 3,
+      "required": true
+    },
+    "bgLight": {
+      "kind": "field",
+      "type": "color",
+      "label": "卓・明",
+      "order": 4,
+      "required": true
+    },
+    "barDark": {
+      "kind": "field",
+      "type": "color",
+      "label": "仕切り・暗",
+      "order": 5,
+      "required": true
+    },
+    "barMid": {
+      "kind": "field",
+      "type": "color",
+      "label": "仕切り・中（主人公の肌）",
+      "order": 6,
+      "required": true
+    },
+    "barLight": {
+      "kind": "field",
+      "type": "color",
+      "label": "仕切り・明",
+      "order": 7,
+      "required": true
+    },
+    "oDark": {
+      "kind": "field",
+      "type": "color",
+      "label": "O・暗",
+      "order": 8,
+      "required": true
+    },
+    "oMid": {
+      "kind": "field",
+      "type": "color",
+      "label": "O・中",
+      "order": 9,
+      "required": true
+    },
+    "oLight": {
+      "kind": "field",
+      "type": "color",
+      "label": "O・明",
+      "order": 10,
+      "required": true
+    },
+    "xDark": {
+      "kind": "field",
+      "type": "color",
+      "label": "X・暗",
+      "order": 11,
+      "required": true
+    },
+    "xMid": {
+      "kind": "field",
+      "type": "color",
+      "label": "X・中",
+      "order": 12,
+      "required": true
+    },
+    "xLight": {
+      "kind": "field",
+      "type": "color",
+      "label": "X・明",
+      "order": 13,
+      "required": true
+    },
+    "heroDark": {
+      "kind": "field",
+      "type": "color",
+      "label": "主人公・暗",
+      "order": 14,
+      "required": true
+    },
+    "heroMid": {
+      "kind": "field",
+      "type": "color",
+      "label": "主人公・中",
+      "order": 15,
+      "required": true
+    },
+    "heroLight": {
+      "kind": "field",
+      "type": "color",
+      "label": "主人公・明",
+      "order": 16,
+      "required": true
+    }
+  }
+}

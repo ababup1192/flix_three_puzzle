@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "title": "画面の文言",
+  "note": "プレイヤーの目に入る文字の全部。いじると何が変わるか: turnO / turnX=左上のラベル（いまどちらの番か）/ winO / winX / draw=勝負がついたときの帯の大きい字 / again=その下の小さい字（もう一度遊ぶ操作の案内）。フォント（Xolonium）は英数字だけなので、日本語は出ない。",
+  "turnO": "O TURN",
+  "turnX": "X TURN",
+  "winO": "O WINS!",
+  "winX": "X WINS!",
+  "draw": "DRAW",
+  "again": "SPACE: PLAY AGAIN"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "title": "場面の説明",
+  "note": "gallery/ に描き出す場面の説明。name は SceneRender.shotNames() の名前とそろえる。ここを直すと Studio のギャラリーのカードの題と一言が変わる（絵そのものは変わらない）。",
+  "rows": [
+    { "name": "main", "title": "対局中", "desc": "4 手目まで進んだ盤。次は O の番で、主人公が空いたマスに立っている。", "tags": ["顔"] },
+    { "name": "win",  "title": "O の勝ち", "desc": "O が斜めに 3 つ並べた。勝った列が跳ね、帯に結果が出る。", "tags": [] },
+    { "name": "draw", "title": "引き分け", "desc": "9 マス埋まって、どちらも並ばなかった。", "tags": [] }
+  ]
+}
