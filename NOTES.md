@@ -1,5 +1,5 @@
 # NOTES
-- 2026-09-24: GitHub (private) に push: https://github.com/ababup1192/flix_three_puzzle。visual-dict SKILL.md 22 行目の独自語をゲーム側だけ直した（engine の原本は未修正）。
+- 2026-09-24: GitHub (public) に push: https://github.com/ababup1192/flix_three_puzzle。visual-dict SKILL.md 22 行目の独自語をゲーム側だけ直した（engine の原本は未修正）。
 
 - 2026-09-24: test/TestBoard.flix（Board の部品ごとのテスト 24 本）を追加。make test 42 本緑。
 - 2026-09-24: 学生向け解説ページ（図 + C 併記・PART 0〜5。5 = 部品のテスト）を公開: https://claude.ai/artifact/32wyU1DvjGh4z78wQ8bQ51 （元ファイルはセッションの scratchpad なので、直すときはこの URL を read して作り直す）
